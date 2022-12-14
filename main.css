@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.videoPlayer {
+    position: relative;
+    cursor: pointer;
+}
+
+
+.videoPlayer:hover .controls {
+    opacity: 1;
+}
+
+.videoPlayer .controls {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    opacity: 0;
+    transition: opacity .4s linear;
+}
+
+.videoPlayer button {
+    border: none;
+    color: white;
+    background-color: transparent;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+video {
+    width: 100%;
+}
